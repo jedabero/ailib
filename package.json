@@ -1,0 +1,23 @@
+{
+  "license": "MIT",
+  "name": "ailib",
+  "private": true,
+  "version": "0.0.1",
+  "main": "js/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jedabero/ailib.git"
+  },
+  "keywords": [
+    "AI"
+  ],
+  "author": "Jeison Berdugo <jedabero@hotmail.com>",
+  "bugs": {
+    "url": "https://github.com/jedabero/ailib/issues"
+  },
+  "description": "AI Lib",
+  "homepage": "https://github.com/jedabero/ailib#readme",
+  "scripts": {
+    "test": "make test"
+  }
+}
