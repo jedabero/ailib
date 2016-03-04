@@ -29,9 +29,9 @@ install:
 	@(cd css/vendor && curl -# -O $(TWBS_CDN)$(TWBS_VERSION)/css/bootstrap-theme.css.map)
 	@(cd css/vendor && curl -# -O $(TWBS_CDN)$(TWBS_VERSION)/css/bootstrap-theme.min.css)
 	@echo Downloading font $(FONT_FILE) variants
-	@for fileext in eot svg ttf woof woof2 ; do \
-		(cd fonts && curl -# -O $(TWBS_CDN)$(TWBS_VERSION)/fonts/$(FONT_FILE).$$fileext) ; \
+	@for fileext in eot svg ttf woff woff2 ; do \
+		(cd css/fonts && curl -# -O $(TWBS_CDN)$(TWBS_VERSION)/fonts/$(FONT_FILE).$$fileext) ; \
 	done
 
 clean:
-	@rm -rf css/vendor js/vendor fonts/$(FONT_FILE).*
+	@rm -rf css/vendor js/vendor css/fonts/$(FONT_FILE).*
